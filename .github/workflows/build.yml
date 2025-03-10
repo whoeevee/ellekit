@@ -39,9 +39,10 @@ jobs:
       - name: Get tags
         run: git fetch --prune --unshallow --tags
 
-      - uses: maxim-lobanov/setup-xcode@v1
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@v1
         with:
-        xcode-version: '16.2.0'
+          xcode-version: '16.2.0'
 
       - name: Bootstrap Procursus
         uses: dhinakg/procursus-action@main
