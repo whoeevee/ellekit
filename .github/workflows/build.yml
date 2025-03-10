@@ -41,7 +41,7 @@ jobs:
 
       - name: Select Xcode version (15.1)
         run: |
-          sudo xcode-select --switch /Applications/Xcode_15.1.app
+          sudo xcode-select --switch /Applications/Xcode_16.2.app
 
       - name: Bootstrap Procursus
         uses: dhinakg/procursus-action@main
